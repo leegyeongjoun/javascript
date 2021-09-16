@@ -6,12 +6,81 @@ h1 {
     color: #34495e;
 }
 
+.btn {
+	cursor: pointer;
+}
+
+.clicked {
+	color: #7f8c8d;
+}
+
 .form, .greetings {
     display: none;
+    font-size: 30px;
+}
+
+.greetings {
+	font-size: 40px;
+	text-align: center;
+	margin-top: -2%;
+}
+
+.form {
+	text-align: center;
 }
 
 .showing {
-    display: block;
+	display: block;
+}
+
+.js-clock {
+	font-size: 30px;
+	text-align: center;
+	margin-top: 10%;
+}
+
+.js-weather {
+	font-size: 20px;
+}
+
+.js-weat {
+    text-align: center;
+}
+
+.js-toDoForm {
+	text-align: center;
+	margin-top: 5%;
+}
+
+::placeholder {
+	color: black;
+	text-align: center;
+}
+
+.js-toDoList {
+	list-style-type: none;
+	text-align: center;
+}
+
+.js-toDoList li {
+	font-size: 20px;
+	margin-top: 7px;
+}
+
+.js-toDoList button {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: red;
+	border: none;
+	border-radius: 5px;
+	margin-left: 10px;
+	-webkit-transition-duration: 0.2s; /* Safari */
+	transition-duration: 0.2s;
+}
+
+.js-toDoList button:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+	color: orange;
+	border-radius: 5px;
 }
 
 @keyframes fadeIn {
