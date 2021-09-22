@@ -8,13 +8,13 @@
 let globalName = 'global name';
 {
   let name = 'ellie';
-  console.log(name);
-  name = 'hello';
-  console.log(name);
-  console.log(globalName);
+  console.log(name);          // ellie
+  name = 'hello'; 
+  console.log(name);          // hello
+  console.log(globalName);          // global name
 }
-console.log(name);
-console.log(globalName);
+console.log(name);          // 
+console.log(globalName);          // global name
 
 // var (don't ever use this!)
 // var hoisting (move declaration from bottom to top)
@@ -23,7 +23,7 @@ console.log(globalName);
   age = 4;
   var age;
 }
-console.log(age);
+console.log(age);         // 4
 
 // 3. Constant, r(read only)
 // use const whenever possible.
@@ -47,54 +47,54 @@ const maxNumber = 5;
 // number
 const count = 17; // integer
 const size = 17.1; // decimal number
-console.log(`value: ${count}, type: ${typeof count}`);
-console.log(`value: ${size}, type: ${typeof size}`);
+console.log(`value: ${count}, type: ${typeof count}`);          // value: 17, type: number
+console.log(`value: ${size}, type: ${typeof size}`);          // value: 17.1, type:number
 
 // number - speicla numeric values: infinity, -infinity, NaN
 const infinity = 1 / 0;
 const negativeInfinity = -1 / 0;
 const nAn = 'not a number' / 2;
-console.log(infinity);
-console.log(negativeInfinity);
-console.log(nAn);
+console.log(infinity);          // Infinity
+console.log(negativeInfinity);          // -Infinity
+console.log(nAn);         // NaN
 
 // bigInt (fairly new, don't use it yet)
 const bigInt = 1234567890123456789012345678901234567890n; // over (-2**53) ~ 2*53)
-console.log(`value: ${bigInt}, type: ${typeof bigInt}`);
+console.log(`value: ${bigInt}, type: ${typeof bigInt}`);          // value: 1234567890123456789012345678901234567890, type: bigint
 
 // string
 const char = 'c';
 const brendan = 'brendan';
 const greeting = 'hello ' + brendan;
-console.log(`value: ${greeting}, type: ${typeof greeting}`);
+console.log(`value: ${greeting}, type: ${typeof greeting}`);          // value: hello brendan, type: string
 const helloBob = `hi ${brendan}!`; //template literals (string)
-console.log(`value: ${helloBob}, type: ${typeof helloBob}`);
-console.log('value: ' + helloBob + ' type: ' + typeof helloBob);
+console.log(`value: ${helloBob}, type: ${typeof helloBob}`);          // value: hi brendan!, type: string
+console.log('value: ' + helloBob + ' type: ' + typeof helloBob);          // value: hi brendan! type: string
 
 // boolean
 // false: 0, null, undefined, NaN, ''
 // true: any other value
 const canRead = true;
 const test = 3 < 1; // false
-console.log(`value: ${canRead}, type: ${typeof canRead}`);
-console.log(`value: ${test}, type: ${typeof test}`);
+console.log(`value: ${canRead}, type: ${typeof canRead}`);          // value: true, type: boolean
+console.log(`value: ${test}, type: ${typeof test}`);          // value: false, type: boolean
 
 // null
 let nothing = null;
-console.log(`value: ${nothing}, type: ${typeof nothing}`);
+console.log(`value: ${nothing}, type: ${typeof nothing}`);          // value: null, type: object
 
 // undefined
 let x;
-console.log(`value: ${x}, type: ${typeof x}`);
+console.log(`value: ${x}, type: ${typeof x}`);          // value: undefined, type: undefined
 
 // symbol, create unique identifiers for objects
 const symbol1 = Symbol('id');
 const symbol2 = Symbol('id');
-console.log(symbol1 === symbol2);
+console.log(symbol1 === symbol2);         // false
 const gSymbol1 = Symbol.for('id');
 const gSymbol2 = Symbol.for('id');
-console.log(gSymbol1 === gSymbol2); // true
-console.log(`value: ${symbol1.description}, type: ${typeof symbol1}`);
+console.log(gSymbol1 === gSymbol2);           // true
+console.log(`value: ${symbol1.description}, type: ${typeof symbol1}`);          // value: id, type: symbol
 
 // object, real-life object, data structure
 const ellie = { name: 'ellie', age: 20 };
@@ -102,12 +102,12 @@ ellie.age = 21;
 
 // 5. Dynamic typing: dynamically typed language
 let text = 'hello';
-console.log(text.charAt(0)); //h
-console.log(`value: ${text}, type: ${typeof text}`);
+console.log(text.charAt(0));          //h
+console.log(`value: ${text}, type: ${typeof text}`);          // value: hello, type: string
 text = 1;
-console.log(`value: ${text}, type: ${typeof text}`);
+console.log(`value: ${text}, type: ${typeof text}`);          // value: 1, type: number
 text = '7' + 5;
-console.log(`value: ${text}, type: ${typeof text}`);
+console.log(`value: ${text}, type: ${typeof text}`);          // value: 75, type: string
 text = '8' / '2';
-console.log(`value: ${text}, type: ${typeof text}`);
-console.log(text.charAt(0));
+console.log(`value: ${text}, type: ${typeof text}`);          // value: 4, type: number
+console.log(text.charAt(0));          // Uncaught TypeError: text.charAt is not a function at variable.js:113  --> bc changed text type
