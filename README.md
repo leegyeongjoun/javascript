@@ -1,1 +1,1 @@
-# Studying_JS
+# javascript
