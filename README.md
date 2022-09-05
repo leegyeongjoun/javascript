@@ -2,7 +2,6 @@
 Studying for JavaScript<br/><br/><br/>
 
 ---
----
 # NomadCoderVanillaJS
 A clone of the productivity chrome app 'momentom' on Vanilla JS<br/>
 초보자를 위한 바닐라 자바스크립 from Nomad Coder <br/>
@@ -12,7 +11,6 @@ A clone of the productivity chrome app 'momentom' on Vanilla JS<br/>
 [github](https://github.com/Ahram-Kim/NomadCoderVanillaJS) /
 [view work](https://byahram.github.io/javascript/NomadCoderVanilaJS/index.html) <br/><br/><br/>
 
----
 ---
 # JavaScript30
 A 30 day Vanilla JavaScript Challenge from Wes Bos <br/>
