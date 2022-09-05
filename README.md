@@ -2,11 +2,11 @@
 Studying for JavaScript<br/><br/><br/>
 
 ---
-#BasicJavaScriptByDreamCoding
-[Dream Coding Site](https://academy.dream-coding.com/collections)
-[Dream Coding Youtube](https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2)
+# BasicJavaScriptByDreamCoding
+[Dream Coding Site](https://academy.dream-coding.com/collections) <br/>
+[Dream Coding Youtube](https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2) <br/><br/>
 ## My Works
-[github](https://github.com/byahram/javascript/tree/main/BasicJavaScriptByDreamCoding)
+[github](https://github.com/byahram/javascript/tree/main/BasicJavaScriptByDreamCoding) <br/><br/><br/>
 
 ---
 # NomadCoderVanillaJS
